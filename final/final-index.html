@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Video Game Sales -- Data Viz Final Project</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet"href="introjs_package/introjs.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,400italic,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+	<div class="container">
+
+		<h1>Video Game Sales</h1>
+		<h2>Explore the top genres, platforms, and publishers from 1980 to 2020</h2>
+
+		<div style="margin-bottom: 20px;">
+			<a href="https://www.kaggle.com/datasets/anandshaw2001/video-game-sales" target="_blank" class="btn btn-info" role="button">
+			  View Dataset on Kaggle
+			</a>
+			<button onClick="window.location.reload();" class="btn btn-info tutorial" style="margin-left: 15px">Tutorial</button>
+		</div>
+
+		<!-- X axis dropdown -->
+		<form class="form-inline">
+			<div class="form-group">
+			  <label for="x-axis-select"> Attributes :</label>
+			  <select class="form-control" id="x-axis-select">
+				<option value="Year">Year</option>
+				<option value="Genre">Genre</option>
+				<option value="Platform">Platform</option>
+				<option value="Publisher">Publisher</option>
+			  </select>
+
+			  <!-- Y axis dropdown -->
+			  <label for="y-axis-select">Regions:</label>
+			  <select class="form-control" id="y-axis-select">
+				<option value="Global_Sales">Global</option>
+				<option value="NA_Sales">North America</option>
+				<option value="EU_Sales">Europe</option>
+				<option value="JP_Sales">Japan</option>
+				<option value="Other_Sales">Other Regions</option>
+			  </select>
+			</div>
+		</form>
+
+		<!-- Aggregation dropdown -->
+		<form class="form-inline" style="margin-top: 10px;">
+			<div class="form-group">
+				<label for="aggregation-select">Metric:</label>
+				<select class="form-control" id="aggregation-select">
+					<option value="sum">Total Sales</option>
+					<option value="count">Number of Games Released</option>
+				</select>
+			</div>
+		</form>
+
+		<!-- Sort dropdown -->
+		<form class="form-inline" style="margin-top: 10px;">
+			<div class="form-group">
+			<label for="sort-select">Sort order:</label>
+			<select class="form-control" id="sort-select">
+				<option value="desc" selected>Descending</option>
+				<option value="asc">Ascending</option>
+			</select>
+			</div>
+		</form>
+		
+		<!-- We will add the SVG chart to the following container -->
+		<div id="visualization-wrapper">
+		<div id="chart-area"></div>
+		<div 
+			id="chart-summary" 
+			aria-live="polite">
+		</div>
+		<div id="tooltip" style="position: absolute; display: none;"></div>
+		
+
+
+	</div>
+
+	<!-- Order matters: we first import D3, then we use it in 
+    scatterplot and barchart. We use our Scatterplot and Barchart
+    objects in our main.js, so it should be last. -->
+	<script src="js/d3.v6.min.js"></script>
+	<script src="introjs_package/intro.js"></script>
+	<script src="js/d3-annotation.min.js"></script>
+    <script src="js/scatterplot.js"></script>
+    <script src="js/barchart.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

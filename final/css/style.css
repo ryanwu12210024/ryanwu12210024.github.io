@@ -1,0 +1,179 @@
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #545454;
+  color: #ffffff;
+}
+
+h1 {
+  color: #74bbf9;
+  stroke: black;
+  margin-top: 80px;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #74bbf9;
+  font-style: italic;
+}
+
+/*************/
+/*    FORM   */
+/*************/
+
+.form-inline {
+  margin-bottom: 30px;
+}
+
+.form-control {
+  background: #333;
+  border: 1px solid #555;
+  color: #fff;
+  width: 250px;
+}
+
+.form-group label {
+  font-weight: 400;
+  margin-right: 10px;
+}
+
+/***************/
+/*  BAR CHART  */
+/***************/
+
+.bar {
+  fill: #66ccff;
+  transition: fill 0.3s ease;
+}
+
+.bar:hover {
+  fill: #3f11f5;
+}
+
+.axis {
+  font: 15px sans-serif;
+  fill: #eee;
+}
+
+.axis-title {
+  fill: #aaa;
+  font-size: 16px;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #aaa;
+  shape-rendering: crispEdges;
+}
+
+.axis text {
+  font-size: 16px; 
+  fill: #eee;
+}
+
+#tooltip {
+  position: absolute;
+  display: none;
+  background-color: white;
+  color: black;
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-size: 15px;
+  pointer-events: none;
+  z-index: 1000;
+  max-width: 250px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  line-height: 1.4;
+}
+
+.tooltip-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #258be4;
+  margin-bottom: 4px;
+}
+
+.barchart-tooltip-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: black; /* ✅ Only for Barchart tooltip */
+  margin-bottom: 4px;
+}
+
+#tooltip ul {
+  margin: 6px 0 0 0;
+  padding-left: 18px;
+}
+
+#tooltip li {
+  margin-bottom: 2px;
+}
+
+/* Bar hover and active styling */
+.bar:hover {
+  stroke: #3f11f5;
+  stroke-width: 2px;
+  cursor: pointer;
+}
+
+.bar.active {
+  stroke: #ffffff;
+  stroke-width: 3px;
+}
+
+#visualization-wrapper {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+#chart-summary {
+  width: 250px;
+  color: #ddd;
+  font-size: 18px;
+  line-height: 1.5;
+  flex-shrink: 0;
+}
+
+.btn.btn-info {
+  font-size: 16px;
+  background-color: #74bbf9;
+  color: black;
+}
+
+/* introjs tutorial style */
+.tutorial-tooltip * {
+  color: rgb(59, 58, 58);
+  font-size: 20px;
+  max-width: 500px;
+}
+.tutorial-tooltip .introjs-tooltip-title {
+  color: #258be4;
+  font-size: 26px;
+}
+.tutorial-tooltip .introjs-tooltiptext{
+  padding: 20px;
+}
+.tutorial-tooltip .introjs-tooltip-button {
+  text-align: left;
+}
+
+/* introjs hint style */
+.hint-tooltip {
+  color: rgb(59, 58, 58);
+  font-size: 18px;
+}
+
+.annotation-note-title {
+  fill: #66ccff;
+  font-size: 18px;
+}
+.annotation-note-label {
+  fill: white;
+  font-size: 16px;
+}
