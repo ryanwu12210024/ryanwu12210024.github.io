@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ryan Wu's World</title>
+    <!-- <title>Ryan Wu's World</title> -->
     <link rel="stylesheet" href="/style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
@@ -11,14 +11,21 @@
     <link rel="manifest" href="/favicon/site.webmanifest">
     <link rel="stylesheet" href="/assets/css/tailwind.css">
 </head>
+
 <body class="bg-white text-slate-900 antialiased">
     {% include nav.html %}
-    <main class="max-w-4xl mx-auto px-6 py-14 prose prose-slate">
-        {{ content }}
+
+    <main class="max-w-4xl mx-auto px-6 py-14"> 
+        <!-- prose prose-slate"> -->
+        <div class="leading-relaxed">
+            {{ content }}
+        </div>
     </main>
-    <footer class="border-t">
+
+    <footer class="border-t border-slate-100">
         <div class="max-w-4xl mx-auto px-6 py-10 text-sm text-slate-500">
             © {{ site.time | date: "%Y" }} Ruilin Wu. All rights reserved.
+            <a class="underline hover:text-slate-700" href="mailto:rywu@davidson.edu">rywu@davidson.edu</a>
         </div>
     </footer>
 </body>
