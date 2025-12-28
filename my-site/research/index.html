@@ -1,0 +1,18 @@
+---
+layout: default
+title: Research
+---
+
+<h1>Research</h1>
+
+<ul class="not-prose mt-8 space-y-5">
+  {% for item in site.data.research %}
+    <li class="border rounded-lg p-5">
+      <div class="flex items-baseline justify-between gap-4">
+        <h3 class="font-medium">{{ item.title }}</h3>
+        <span class="text-sm text-slate-500">{{ item.year }}</span>
+      </div>
+      <p class="text-sm text-slate-600 mt-2">{{ item.description }}</p>
+    </li>
+  {% endfor %}
+</ul>
