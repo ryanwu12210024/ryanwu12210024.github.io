@@ -1,8 +1,51 @@
-- title: "Investigating EOR-1 Accessible Regions and Binding Sites in Relation to NHR-25 in C. elegans"
-  year: 2025
-  description: "Studying if EOR-1 could be a potential pioneer factor for NHR-25 by analyzing ATAC-seq and CUT&RUN data."
+- title: "Chromatin Accessibility and Pioneer Factor Activity in <em>C. elegans</em>"
+  year: "2025–Present"
+  role: "Undergraduate Researcher, Davidson College"
+  advisor: "Prof. Deborah Thurtle-Schmidt"
+  summary: >
+    Investigating the role of EOR-1 as a pioneer factor
+    in regulating NHR-25 binding and chromatin accessibility in
+    <em>C. elegans</em>. The project integrates CUT&RUN and ATAC-seq
+    experiments with custom computational pipelines to characterize
+    regulatory landscapes.
+  methods:
+    - ATAC-seq
+    - CUT&RUN
+    - Python & R bioinformatics pipelines
+    - Peak calling and chromatin analysis
+  highlights:
+    - Protocol optimization for improved nuclei viability and data quality
+    - Poster presentations at Davidson College Fall Research Symposium and ABRCMS 2025
 
-- title: "Fibrillation kinetics of human lysozyme"
-  year: 2025
-  description: "Comparative kinetics and effects of nanospheres/crowding agents."
+- title: "Fibrillation Kinetics of Human Lysozyme under Crowding Conditions"
+  year: "2025"
+  role: "Undergraduate Researcher, Davidson College"
+  advisor: "Prof. Jeffrey Myers"
+  summary: >
+    Studied amyloid fibrillation behavior of human lysozyme under
+    saccharide and synthetic crowding agents using fluorescence-based
+    kinetic assays. Compared aggregation dynamics across lysozyme
+    variants to assess sequence-dependent effects.
+  methods:
+    - Fluorescence kinetic assays
+    - Sigmoidal regression analysis
+    - BLAST sequence comparison
+  highlights:
+    - Comparative analysis of human vs. hen egg white lysozyme aggregation
 
+- title: "Functional Analysis of Transcription Factor Sm49580 in <em>Schistosoma mansoni</em>"
+  year: "2024"
+  role: "Visiting Undergraduate Researcher, Fudan University"
+  advisor: "Dr. Jipeng Wang"
+  summary: >
+    Investigated the localization and functional role of transcription
+    factor Sm49580 in the tegument of <em>S. mansoni</em> through RNAi
+    screening and <em>in situ</em> hybridization. Combined molecular assays
+    with <em>in vivo</em> infection models to examine phenotypic consequences
+    of gene knockdown.
+  methods:
+    - RNA interference (RNAi)
+    - WISH & FISH
+    - Mouse infection models
+  highlights:
+    - Tissue-specific expression analysis in parasitic flatworms

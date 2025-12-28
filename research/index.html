@@ -3,16 +3,50 @@ layout: default
 title: Research
 ---
 
-<h1>Research</h1>
+<section class="space-y-12">
+  <header class="space-y-3">
+    <h1 class="text-3xl font-semibold tracking-tight">Research</h1>
+    <p class="text-slate-600">
+      Selected research projects spanning molecular biology,
+      genomics, biochemistry, and computational analysis.
+    </p>
+  </header>
 
-<ul class="not-prose mt-8 space-y-5">
   {% for item in site.data.research %}
-    <li class="border rounded-lg p-5">
-      <div class="flex items-baseline justify-between gap-4">
-        <h3 class="font-medium">{{ item.title }}</h3>
+    <article class="card space-y-4">
+      <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-2">
+        <h2 class="text-lg font-medium">{{ item.title }}</h2>
         <span class="text-sm text-slate-500">{{ item.year }}</span>
       </div>
-      <p class="text-sm text-slate-600 mt-2">{{ item.description }}</p>
-    </li>
+
+      <p class="text-sm text-slate-500">
+        {{ item.role }} · {{ item.advisor }}
+      </p>
+
+      <p class="text-slate-600">
+        {{ item.summary }}
+      </p>
+
+      {% if item.methods %}
+        <div>
+          <h3 class="text-sm font-medium text-slate-700">Methods</h3>
+          <ul class="mt-2 flex flex-wrap gap-2">
+            {% for m in item.methods %}
+              <li class="text-xs rounded-md bg-slate-100 px-2 py-1 text-slate-600">
+                {{ m }}
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
+
+      {% if item.highlights %}
+        <ul class="mt-2 list-disc list-inside text-sm text-slate-600">
+          {% for h in item.highlights %}
+            <li>{{ h }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </article>
   {% endfor %}
-</ul>
+</section>
