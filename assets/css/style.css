@@ -1,0 +1,19 @@
+.social-icon {
+  width: 40px;
+  height: 40px;
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-icon img {
+  width: 20px;
+  height: 20px;
+  display: block;
+  object-fit: contain;
+}
+.site-header {
+  background-color: rgba(52, 220, 246, 0.524); /* purple-100-ish glass */
+  color: #0f172a; /* slate-900 */
+  backdrop-filter: blur(10px);
+}
