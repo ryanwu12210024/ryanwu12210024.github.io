@@ -4,7 +4,6 @@ layout: default
 
 <style>
   main {
-    height: 403px !important;
     max-width: 100% !important;
     padding: 0 !important;
   }
@@ -14,7 +13,7 @@ layout: default
   <!-- Background image - spans full width -->
   <div class="absolute inset-0 -z-10">
     <img src="assets/images/Yosemite 4.jpg" alt="Yosemite | Homepage Background" 
-         class="w-full h-1/2 object-cover">
+         class="w-full h-3/5 object-cover">
   </div>
 
   <!-- Content section - stays same width -->
@@ -23,8 +22,11 @@ layout: default
       Hi, I'm Ryan.
     </h1>
 
-    <p class="text-lg text-slate-600 max-w-2xl">
-      I'm a researcher and developer working at the intersection of biology and computation.
+    <p class="text-lg max-w-2xl">
+      I'm a <span class="text-teal-600"><b>student researcher and developer</b></span> working at the <span class="text-purple-700"><b>intersection of biology and computation.</b></span>
+      <br><br>
+      In this space, I share my portfolio of <a href="/research/" class="">research</a>, 
+      <a href="/projects/">personal projects</a>, and daily interests.
     </p>
 
     <div class="flex gap-4 pt-2">
@@ -33,15 +35,10 @@ layout: default
          bg-purple-700 hover:bg-purple-500 text-white text">
         Learn More About Me
       </a>
-      <a href="/research/"
+      <a href="/resume/"
          class="inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition
-         bg-purple-700 hover:bg-purple-500 text-white text">
-          Research
-      </a>
-      <a href="/projects/"
-         class="inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition
-         bg-purple-700 hover:bg-purple-500 text-white text">
-         Projects
+         bg-slate-50 border border-purple-700 hover:bg-slate-200 text-purple-700 text">
+          Resume
       </a>
     </div>
   </section>
