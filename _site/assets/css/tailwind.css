@@ -535,6 +535,9 @@
   .text-nowrap {
     text-wrap: nowrap;
   }
+  .text-wrap {
+    text-wrap: wrap;
+  }
   .text-slate-50 {
     color: var(--color-slate-50, oklch(98.4% 0.003 247.858));
   }
