@@ -20,7 +20,9 @@ async function handleSubmit(event) {
         await emailjs.send('service_4vv1jqh', 'template_l3seqch', {
             from_name: name,
             from_email: email,
+            name: name,
             message: message,
+            email: email,
             to_email: 'rywu@davidson.edu'
         });
 
