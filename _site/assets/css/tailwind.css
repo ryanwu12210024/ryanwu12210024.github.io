@@ -188,8 +188,14 @@
   .sticky {
     position: sticky;
   }
+  .inset-0 {
+    inset: calc(var(--spacing, 0.25rem) * 0);
+  }
   .top-0 {
     top: calc(var(--spacing, 0.25rem) * 0);
+  }
+  .-z-10 {
+    z-index: calc(10 * -1);
   }
   .z-50 {
     z-index: 50;
@@ -260,6 +266,9 @@
   .table {
     display: table;
   }
+  .h-1\/2 {
+    height: calc(1/2 * 100%);
+  }
   .h-5 {
     height: calc(var(--spacing, 0.25rem) * 5);
   }
@@ -271,6 +280,15 @@
   }
   .h-64 {
     height: calc(var(--spacing, 0.25rem) * 64);
+  }
+  .h-80 {
+    height: calc(var(--spacing, 0.25rem) * 80);
+  }
+  .h-96 {
+    height: calc(var(--spacing, 0.25rem) * 96);
+  }
+  .min-h-screen {
+    min-height: 100vh;
   }
   .w-5 {
     width: calc(var(--spacing, 0.25rem) * 5);
@@ -472,6 +490,9 @@
   }
   .pt-2 {
     padding-top: calc(var(--spacing, 0.25rem) * 2);
+  }
+  .pt-20 {
+    padding-top: calc(var(--spacing, 0.25rem) * 20);
   }
   .pl-3 {
     padding-left: calc(var(--spacing, 0.25rem) * 3);

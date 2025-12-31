@@ -2,32 +2,47 @@
 layout: default
 ---
 
-<section class="not-prose space-y-6">
-  <h1 class="text-4xl font-semibold tracking-tight">
-    Hi, I’m Ryan.
-  </h1>
+<style>
+  main {
+    height: 403px !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+</style>
 
-  <p class="text-lg text-slate-600 max-w-2xl">
-    I’m a researcher and developer working at the intersection of biology and computation.
-  </p>
-
-  <div class="flex gap-4 pt-2">
-    <a href="about/"
-      class="inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition
-       bg-purple-700 hover:bg-purple-500 text-white text">
-      Learn More About Me
-    </a>
-    <a href="/research/"
-       class="inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition
-       bg-purple-700 hover:bg-purple-500 text-white text">
-        Research
-    </a>
-    <a href="/projects/"
-       class="inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition
-       bg-purple-700 hover:bg-purple-500 text-white text">
-       Projects
-    </a>
+<div class="relative min-h-screen">
+  <!-- Background image - spans full width -->
+  <div class="absolute inset-0 -z-10">
+    <img src="assets/images/Yosemite 4.jpg" alt="Yosemite | Homepage Background" 
+         class="w-full h-1/2 object-cover">
   </div>
-</section>
 
+  <!-- Content section - stays same width -->
+  <section class="max-w-5xl mx-auto px-6 not-prose space-y-6 pt-20">
+    <h1 class="text-4xl font-semibold tracking-tight">
+      Hi, I'm Ryan.
+    </h1>
 
+    <p class="text-lg text-slate-600 max-w-2xl">
+      I'm a researcher and developer working at the intersection of biology and computation.
+    </p>
+
+    <div class="flex gap-4 pt-2">
+      <a href="about/"
+        class="inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition
+         bg-purple-700 hover:bg-purple-500 text-white text">
+        Learn More About Me
+      </a>
+      <a href="/research/"
+         class="inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition
+         bg-purple-700 hover:bg-purple-500 text-white text">
+          Research
+      </a>
+      <a href="/projects/"
+         class="inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition
+         bg-purple-700 hover:bg-purple-500 text-white text">
+         Projects
+      </a>
+    </div>
+  </section>
+</div>
