@@ -41,3 +41,25 @@
   align-items: center;
   justify-content: center;
 }
+.game-cover {
+  width: 225px;
+  height: 225px;
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-title {
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 75px;
+    height: 3px;
+    background: linear-gradient(to right, #7c3aed, #a855f7);
+    border-radius: 2px;
+}
