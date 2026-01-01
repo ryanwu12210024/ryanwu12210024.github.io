@@ -25,7 +25,7 @@ title: About Me
                     href="https://www.linkedin.com/in/ruilin-wu-nc/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="social-icon rounded-md hover:bg-slate-50"
+                    class="social-icon rounded-md hover:bg-slate-50 hover:scale-105"
                 >
                 <img
                     src="/assets/icons/linkedin.png"
@@ -40,7 +40,7 @@ title: About Me
                     href="https://github.com/ryanwu12210024/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="social-icon rounded-md hover:bg-slate-50"
+                    class="social-icon rounded-md hover:bg-slate-50 hover:scale-105"
                 >
                 <img
                     src="/assets/icons/github.svg"
@@ -141,6 +141,17 @@ title: About Me
     </section>
 
     <section class="py-6">
+        <h2 class="text-2xl font-semibold mb-6 section-title">My Story</h2>
+        <div class="prose prose-slate max-w-none text-base">
+            <p>
+                Born and raised in Shanghai, I moved to the United States in 2022 to pursue my undergraduate degree at Davidson College.<br><br>
+                Before Davidson, I always knew I wanted to study Biology to which I have been committed since high school. However, it was not until I took my first Computer Science course at Davidson that I discovered my passion for computational problem-solving as well.<br><br>
+                Since then, I have been fascinated by the intersection of both disciplines and have been actively seeking opportunities to combine them in my academic and research pursuits.<br><br>
+                Currently, I am looking for Research Assistant/Technician positions in institutes for the next two years before applying to graduate school.
+            </p>
+    </section>
+
+    <section class="py-6">
         <h2 class="text-2xl font-semibold mb-6 section-title">Some Favorite Albums</h2>
         <div class="flex items-center flex-wrap gap-4">
             <a href="https://rateyourmusic.com/release/album/daft-punk/discovery/" target="_blank" rel="noopener noreferrer">
@@ -203,23 +214,4 @@ title: About Me
     </section>
 </div>
 
-<script>
-function togglePersonalSection() {
-    const section = document.getElementById('personal-section');
-    const toggleText = document.getElementById('toggle-text');
-    const toggleIcon = document.getElementById('toggle-icon');
-    const isHidden = section.classList.contains('max-h-0');
-    
-    if (isHidden) {
-        section.classList.remove('max-h-0', 'opacity-0');
-        section.classList.add('max-h-[2000px]', 'opacity-100');
-        toggleText.textContent = '🔼 Show less';
-        toggleIcon.style.transform = 'rotate(180deg)';
-    } else {
-        section.classList.add('max-h-0', 'opacity-0');
-        section.classList.remove('max-h-[2000px]', 'opacity-100');
-        toggleText.textContent = '🔽 Learn more about me';
-        toggleIcon.style.transform = 'rotate(0deg)';
-    }
-}
-</script>
+<script src="js/about-toggle.js"></script>

@@ -13,8 +13,7 @@
   object-fit: contain;
 }
 .site-header {
-  background-color: rgba(52, 220, 246, 0.524); /* purple-100-ish glass */
-  color: #0f172a; /* slate-900 */
+  background: linear-gradient(to right, rgba(16, 185, 129, 0.5), rgba(59, 130, 246, 0.5), rgba(139, 92, 246, 0.5));
   backdrop-filter: blur(10px);
 }
 .skill-icon {
@@ -62,4 +61,8 @@
     height: 3px;
     background: linear-gradient(to right, #7c3aed, #a855f7);
     border-radius: 2px;
+}
+.highlighted-text {
+  font-weight: bold;
+  color: #7c3aed;
 }
