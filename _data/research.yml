@@ -1,5 +1,5 @@
 - title: "Chromatin Accessibility and Pioneer Factor Activity in <em>C. elegans</em>"
-  year: "2025–Present"
+  year: "Summer 2025 - Present"
   role: "Undergraduate Researcher, Davidson College"
   advisor: "Prof. Deborah Thurtle-Schmidt"
   summary: >
@@ -11,14 +11,16 @@
   methods:
     - ATAC-seq
     - CUT&RUN
-    - Python & R bioinformatics pipelines
-    - Peak calling and chromatin analysis
+    - Python, Bash & R
+    - Diffential analysis & peak calling
   highlights:
     - Protocol optimization for improved nuclei viability and data quality
     - Poster presentations at Davidson College Fall Research Symposium and ABRCMS 2025
+  poster:
+    - /assets/documents/F25.pdf
 
 - title: "Fibrillation Kinetics of Human Lysozyme under Crowding Conditions"
-  year: "2025"
+  year: "Spring 2025"
   role: "Undergraduate Researcher, Davidson College"
   advisor: "Prof. Jeffrey Myers"
   summary: >
@@ -32,9 +34,11 @@
     - BLAST sequence comparison
   highlights:
     - Comparative analysis of human vs. hen egg white lysozyme aggregation
+  poster:
+    - /assets/documents/Sp25.pdf
 
 - title: "Functional Analysis of Transcription Factor Sm49580 in <em>Schistosoma mansoni</em>"
-  year: "2024"
+  year: "Summer 2024"
   role: "Visiting Undergraduate Researcher, Fudan University"
   advisor: "Dr. Jipeng Wang"
   summary: >

@@ -66,3 +66,17 @@
   font-weight: bold;
   color: #7c3aed;
 }
+.research-title {
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+.research-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    height: 2px;
+    background: linear-gradient(to right, #7c3aed, #a855f7);
+    border-radius: 2px;
+}
