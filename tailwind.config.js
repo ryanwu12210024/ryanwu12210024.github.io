@@ -4,7 +4,12 @@ module.exports = {
     "./_layouts/**/*.{html,liquid}",
     "./**/*.{html,md,liquid}",
   ],
-  theme: { extend: {} },
+  theme: { extend: {
+    fontFamily: {
+      sans: ['Fira Code', 'monospace']
+    }
+    } 
+  },
   plugins: [
     require("@tailwindcss/typography"),
   ],
