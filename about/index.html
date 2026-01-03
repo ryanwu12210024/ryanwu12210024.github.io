@@ -107,19 +107,7 @@ title: About Me
     </div>
 </section>
 
-<!-- Toggle Button -->
-<div class="py-6">
-    <button 
-        id="toggle-personal"
-        class="group inline-flex items-center gap-3 px-5 py-3 bg-linear-to-r from-purple-600 to-purple-700 text-white rounded-full shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300"
-        onclick="togglePersonalSection()"
-    >
-        <span id="toggle-text" class="font-medium">🔽 Learn more about me</span>
-        <svg id="toggle-icon" class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-        </svg>
-    </button>
-</div>
+
 
 <!-- Personal Preference Section -- Hidden Initially -->
 <div id="personal-section" class="overflow-hidden transition-all duration-500 ease-in-out max-h-0 opacity-0">
@@ -212,6 +200,20 @@ title: About Me
             </a>
         </div>
     </section>
+</div>
+
+<!-- Toggle Button -->
+<div class="py-6">
+    <button 
+        id="toggle-personal"
+        class="group inline-flex items-center gap-3 px-5 py-3 bg-linear-to-r from-purple-600 to-purple-700 text-white rounded-full shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300"
+        onclick="togglePersonalSection()"
+    >
+        <span id="toggle-text" class="font-medium">🔽 Learn more about me</span>
+        <svg id="toggle-icon" class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+    </button>
 </div>
 
 <script src="js/about-toggle.js"></script>
