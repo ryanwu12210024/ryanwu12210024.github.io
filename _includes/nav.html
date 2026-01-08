@@ -13,13 +13,45 @@ class="site-header sticky top-0 z-50 backdrop-blur">
       </span>
     </a>
 
-
-    <div class="flex items-center gap-5 text-base font-semibold text-teal-900">
+    <!-- Desktop Navigation -->
+    <div class="hidden md:flex items-center gap-5 text-base font-semibold text-teal-900">
       <a class="rounded-md px-2 py-1" href="/about/">About</a>
       <a class="rounded-md px-2 py-1" href="/research/">Research</a>
       <a class="rounded-md px-2 py-1" href="/projects/">Projects</a>
       <a class="rounded-md px-2 py-1" href="/resume/">Resume/CV</a>
       <a class=" rounded-md px-2 py-1" href="/contact/">Leave a message!</a>
     </div>
+
+    <!-- Mobile Menu Button -->
+    <button id="mobile-menu-button" class="md:hidden p-2 text-teal-900">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
   </nav>
+
+  <!-- Mobile Navigation Menu -->
+  <div id="mobile-menu" class="md:hidden hidden bg-white/95 backdrop-blur border-t border-gray-200">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex flex-col gap-2 text-base font-semibold text-teal-900">
+      <a class="rounded-md px-2 py-2 hover:bg-teal-50" href="/about/">About</a>
+      <a class="rounded-md px-2 py-2 hover:bg-teal-50" href="/research/">Research</a>
+      <a class="rounded-md px-2 py-2 hover:bg-teal-50" href="/projects/">Projects</a>
+      <a class="rounded-md px-2 py-2 hover:bg-teal-50" href="/resume/">Resume/CV</a>
+      <a class="rounded-md px-2 py-2 hover:bg-teal-50" href="/contact/">Leave a message!</a>
+    </div>
+  </div>
 </header>
+
+<script>
+  document.getElementById('mobile-menu-button').addEventListener('click', function() {
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenu.classList.toggle('hidden');
+  });
+
+  // Close mobile menu when clicking on a link
+  document.querySelectorAll('#mobile-menu a').forEach(link => {
+    link.addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.add('hidden');
+    });
+  });
+</script>
