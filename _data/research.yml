@@ -1,20 +1,19 @@
-- title: "Chromatin Accessibility and Pioneer Factor Activity in <em>C. elegans</em>"
+- title: "Identifying EOR-1 Binding Sites and Chromatin Accessibility in Relation to NHR-25 in <em>C. elegans</em>"
   year: "Summer 2025 - Present"
   role: "Undergraduate Researcher, Davidson College"
   advisor: "Prof. Deborah Thurtle-Schmidt"
   summary: >
     Investigating the role of EOR-1 as a pioneer factor
     in regulating NHR-25 binding and chromatin accessibility in
-    <em>C. elegans</em>. The project integrates CUT&RUN and ATAC-seq
-    experiments with custom computational pipelines to characterize
-    regulatory landscapes.
+    <em>C. elegans</em>.<br><br>
+    Optimized ATAC-seq and CUT&RUN protocols for increasing data quality with higher cell viability after homogenization.<br><br>
+    Built custom bioinformatics pipelines in Python and R for processing and analyzing sequencing data, including differential accessibility and peak calling analyses.
   methods:
     - ATAC-seq
     - CUT&RUN
     - Python, Bash & R
     - Diffential analysis & peak calling
   highlights:
-    - Protocol optimization for improved nuclei viability and data quality
     - Poster presentations at Davidson College Fall Research Symposium and ABRCMS 2025
   poster:
     - /assets/documents/F25.pdf
@@ -26,30 +25,31 @@
   summary: >
     Studied amyloid fibrillation behavior of human lysozyme under
     saccharide and synthetic crowding agents using fluorescence-based
-    kinetic assays. Compared aggregation dynamics across lysozyme
+    kinetic assays. <br><br>
+    Compared aggregation dynamics across lysozyme
     variants to assess sequence-dependent effects.
   methods:
-    - Fluorescence kinetic assays
+    - Fluorescence spectroscopy
     - Sigmoidal regression analysis
-    - BLAST sequence comparison
+    - BLAST sequence analysis
   highlights:
-    - Comparative analysis of human vs. hen egg white lysozyme aggregation
+    - Poster presentations at Davidson College Verna Case Symposium, Spring 2025
   poster:
     - /assets/documents/Sp25.pdf
 
-- title: "Functional Analysis of Transcription Factor Sm49580 in <em>Schistosoma mansoni</em>"
+- title: "Localization and Function of Transcription Factor <em>Sm49580</em> in <em>Schistosoma mansoni</em>"
   year: "Summer 2024"
   role: "Visiting Undergraduate Researcher, Fudan University"
   advisor: "Dr. Jipeng Wang"
   summary: >
     Investigated the localization and functional role of transcription
-    factor Sm49580 in the tegument of <em>S. mansoni</em> through RNAi
-    screening and <em>in situ</em> hybridization. Combined molecular assays
+    factor <em>Sm49580</em> in the tegument of <em>S. mansoni</em> through RNAi and <em>in situ</em> hybridization. <br><br>
+    Combined molecular assays
     with <em>in vivo</em> infection models to examine phenotypic consequences
     of gene knockdown.
   methods:
     - RNA interference (RNAi)
+    - Molecular cloning
     - WISH & FISH
-    - Mouse infection models
+    - Mouse husbandry
   highlights:
-    - Tissue-specific expression analysis in parasitic flatworms
